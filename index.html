@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" lang="en">
+<html lang="ru">
 	<head>
 		<title>Main page</title>
 		<meta charset="utf-8">
@@ -292,15 +292,17 @@
 				</div>
 				<div class="footer-column-subscribe">
 					<h4>Подпишитесь на рассылку</h4>
-				<ul>
-				<li>
 				<form action="subscribe-form">
+				<div class="footer-form">
 				<input type="email" name="mail-footer" id="mail-footer" placeholder="E-mail"/>	
+								<button class="subscribe-btn" type="submit">Подписаться <svg class="send-icon">
+										<use href="./images/icons.svg#icon-send"></use>
+									</svg></button>
+				</div>	
 				</form>
-				</li>
-				<li><button class="subscribe-btn" type="submit">Подписаться <svg class="send-icon"><use href="./images/icons.svg#icon-send"></use></svg></button></li>
-				</ul>
+				
 				</div>
+			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
@@ -334,7 +336,7 @@
 					<label for="mail-form" class="form-label">Почта</label>
 					<input type="email" name="mail-form" class="form-input" id="mail-form"></div>
 						<div class="form-field">
-					<label for="comment-form" class="form-label">Комментарий</label>
+					<label for="comment" class="form-label">Комментарий</label>
 					<textarea name="comment" id="comment" placeholder="Введите текст" class="comment-area" cols="30" rows="10"></textarea></div>
 					
 				</div>
